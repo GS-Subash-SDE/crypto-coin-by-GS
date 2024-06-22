@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import React, { StrictMode } from "react";
+import './App.scss';
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./App.scss";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-
+// REACT 18
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <>
-    <App/>
-  </>
+  <StrictMode>
+    <App />
+  </StrictMode>
 );
